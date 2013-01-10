@@ -1,0 +1,1 @@
+To run the tests unzip simpletest.zip into this directory and then run the tests either through command line or the browser.
