@@ -59,7 +59,7 @@ foreach(new RecursiveIteratorIterator (new RecursiveDirectoryIterator ('./crawle
 		// Turns out PHP has a function for extracting meta tags for us, the only
 		// catch is that it works on files, so we fake a file by creating one using
 		// base64 encode and string concaternation
-		$tmp = get_meta_tags("data://$mime;base64,".base64_encode($content));
+		$tmp = get_meta_tags("data://text/plain;base64,".base64_encode($content));
 		if(isset($tmp['description'])) {
 			$desc = preg_replace('/[^(\x20-\x7F)]*/','',trim($tmp['description']));
 		}
