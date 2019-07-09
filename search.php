@@ -14,7 +14,7 @@ li {
 </head>
 <body>
 <form method="get">
-<input type="input" name="q" value="<?php echo $_GET['q']; ?>" />
+<input type="input" name="q" value="<?php echo htmlentities($_GET['q'], ENT_QUOTES); ?>" />
 <input type="submit" value="Search" />
 </form>
 <?php
